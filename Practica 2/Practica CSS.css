@@ -1,0 +1,133 @@
+/* Como podemos observar cada titulo que corresponde a un h1, h2 ... contiene diferentes caracterisitcas, h1 tiene un fondo de color ,el color de la letra es blanco 
+, el texto esta alineado hacia erl centro, el tipo de letra es arial y además le hemos dado un tamaño y esta puesto en negrita con la funcion bold.*/
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	background-color:#008000;
+	height:50px;
+	color:white;
+	text-align:center;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:2em;
+}
+/* Como podemos observar el h2 es un titulo más pequeño que el h1 , el texto lo hemos alineado en el centro, la letra es Arjal y se encuentra en negrita*/
+h2{
+	text-align:center;
+	font-family:Arial;
+	font-style:italic;
+	font-weight:bold;
+	
+}
+h3{
+	text-align:center;
+}
+body{
+	background:#25CF66;
+	/*text-align:center;*/
+}
+.main{
+	width:90%;
+	height:68px;
+	max-width:2500px;
+	margin:0px auto;
+}
+/* El nav corresponde al menu principal en el que se encuentra las diferentes opciones tales como inicio, cartelera.., este tiene tambien un fondo */
+nav{
+	background:#52C713;
+	overflow:hidden;
+	max-width:80%;
+	text-align:center;
+	padding-left:10%;
+	padding-right:10%;
+}
+/* El list-style none lo ponemos para que no hayan puntos en las diferentes opciones del menu*/
+header nav ul{
+	list-style:none;
+}
+/*header nav ul li{
+	float:left;
+}*/
+header li a{
+	width:200px;
+	padding:10px 20px;
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	float:left;
+	text-align:center;
+}
+header nav ul li a:hover{
+	background:black;
+}
+
+
+
+.articles{
+	width:80%;
+	float:right;
+	background:#fff;
+}
+/*El aside corresponde a la parte izquierda de nuestra pagina web , hemos tenido que implementar difrentes funciones para que se encuentre alineado a la izquierda y se ajuste
+al tamaño de la pagina web */
+aside{
+	width:20%;
+	height:400px;
+	float:left;
+	background: #408600;
+	font-weight:bold;
+}
+aside ul li{
+	list-style:none;
+	text-decoration:none;
+}
+/*El footer corresponde al recuadro de abajo de la pagina web el cual se visualiza al final de la pagina*/
+footer{
+	background:#4B9B04;
+	color:#fff;
+	clear:both;
+	padding: 10px 0px;
+	margin:5px auto;
+	text-align:center;
+}
+h5{
+	font-size:2em;
+	text-align:left;
+}
+.romanos{
+	font-weight:bold;
+	list-style-type:upper-roman;
+}
+.romanos span{
+	font-weight:normal;
+}
+
+.ex1{
+	margin-top:0px;;
+	margin-left:50px;
+	clear: both;
+	max-width: 350px;
+	text-align:left;
+}
+.barra{
+	text-align:center;
+}
+#txt{
+	text-align:right;
+}
+header{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	background-color:#008000;
+	color:white;
+	text-align:center;
+	padding:30px;
+
+}
+p{
+	margin-left:2%;
+	margin-right:2%;
+}

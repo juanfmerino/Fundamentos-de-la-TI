@@ -1,0 +1,187 @@
+					PARTE ESQUEMAS 
+					FUNDAMENTOS DE LAS TI 
+					JUAN DE FRUTOS MERINO 
+
+
+
+
+					PARTE DE LAS PELICULAS 
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+element name = "pelicula" type= "tipo_pelicula"/>
+<ComplexType name= "tipo_pelicula">
+	<sequence>
+		<element name ="pelicula" type="tipo_pelicula" minOccurs= "1" maxOccurs= "6"/>
+	</sequence>
+	<attribute name= "id" type "short" use= "REQUIRED"/>
+</ComplexType>
+
+<ComplexType name= "tipo_pelicula">
+	<sequence>
+		<element name = "Titulo" type= "tipo_titulo" minOccurs= "1" maxOccurs="1"/>
+		<element name = "Personaje" type= "tipo_personaje" minOccurs= "1" maxOccurs="20"/>
+		<element name = "Equipo Tecnico" type = "tipo_equipotecnico" minOccurs= "1" maxOccurs="1"/>
+		<element name=  "FechaEstreno" type = "tipo_FechaEstreno" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "Pais" type= "tipo_pais" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "Idioma" type= "tipo_idioma" minOccurs= "1" maxOccurs= "3"/>
+		<element name= "Genero" type= "tipo_genero" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "Duracion" type= "tipo_duracion" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "CalificacionEdad" type= "tipo_Calificacion_Edad" minOccurs= "1" maxOccurs= "3"/>
+		<element name= "Sinopsis" type= "tipo_sinopsis" minOccurs= "1" maxOccurs="1"/>
+		<element name= "Web" type= "tipo_web" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "Estreno" type= "tipo_estreno" minOccurs= "1" maxOccurs= "1"/>
+		<element name= "Version" type= "tipo_version" minOccurs= "1" maxOccurs="3"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name= "tipo_titulo">
+	<sequence>
+		<element name "TituloOriginal" type= "tipo_TituloOriginal" minOccurs= "1" maxOccurs= "1"
+	</sequence>
+	<attribute name= "Nombre" type= "string"\>
+</ComplexType>
+
+<ComplexType name= "tipo_personaje">
+	<sequence>
+		<element name "Actor" type= "tipo_actor" minOccurs= "1" maxOccurs= "20"/>
+	<\sequence>
+	<attribute name= "Nombre" type = "string"\>
+</ComplexType>
+
+<ComplexType name= "tipo_EquipoTecnico"
+	<sequence>
+		<element name "Director" type= "tipo_director" minOccurs= "1" maxOccurs= "1"/>
+		<element name "Guionista" type= "tipo_guionista" minOccurs= "1" maxOccurs= "1"/>
+		<element name "Productora" type= "tipo_productora" minOccurs="1" maxOccurs="1"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name= "tipo_fechadestreno">
+	<sequence>
+		<element name "Dia" type= "tipo_dia" minOccurs= "1" maxOccurs= "1"
+		<element name "Mes" type= "tipo_mes" minOccurs= "1" maxOccurs= "1"/>
+		<element name "Año" type= "tipo_año" minOccurs= "1" maxOccurs= "1"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name= "tipo_pais">
+	<attribute name= "Nombre" type= "string"\>
+<\ComplexType>
+
+<ComplexType name= "tipo_idioma">
+<\ComplexType>
+
+<ComplexType name = "tipo_genero">
+	<attribute name = "Tipo" type= "string\>
+<\ComplexType>
+
+<ComplexType name= "tipo_Duracion">
+<\ComplexType>
+
+<ComplexType name= "tipo_Sinopsis">
+<\ComplexType>
+
+<ComplexType name= "tipo_Web">
+<\ComplexType>
+
+<ComplexType name= "tipo_Estreno>
+<\ComplexType>
+
+<ComplexType name = "tipo_LugarEstreno">
+	<attribute name = "Lugar" type = "string"\>
+
+
+<ComplexType name= "tipo_CalificacionEdad">
+	<sequence>
+		<element name "Mayorde7años" type= "boolean"\>
+		<element name "Mayorde12años" type = "boolean"\>
+		<element name "Mayorde18años" type= "boolean"\>
+	</sequence>
+</ComplexType>
+
+<ComplexType name= "tipo_version>
+	<sequence>
+		<element name "VersionOriginal" type= "boolean"\>
+		<element name  "Subtitulos" type= "boolean"\>
+		<element name "En3d" type = boolean\>
+	</sequence>
+</ComplexType>
+		
+</xs:schema>
+
+
+
+ 					PARTE DE LAS SEDES 
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+element name="sede" type="tipo_sede"/>
+<ComplexType name="tipo_sede">
+	<sequence>
+		<element name="cartelera" type="tipo_cartelera" minOccurs="1" maxOccurs="1"/>
+		<element name="proximos_estrenos" type="tipo_proximos_estrenos" minOccurs="1" maxOccurs="unbounded"/>
+	</sequence>
+	<attribute name="id" type"short" use="REQUIRED"/>
+</ComplexType>
+
+<ComplexType name="tipo_cartelera">
+	<sequence>
+		<element name="pelicula" type="tipo_pelicula" minOccurs="1" maxOccurs="unbounded"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name="tipo_pelicula">
+	<sequence>
+		<element name="precio" type="float"/>
+		<element name="representacion" type="tipo_representacion"/>
+		<element name="horario" type="tipo_horario"/>
+	</sequence>
+	<attribute name="codigo" type"short" use="REQUIRED"/>
+</ComplexType>
+
+<ComplexType name="tipo_representacion">
+	<sequence>
+		<element name="En3D" type="boolean"/>
+		<element name="Original" type="boolean"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name="tipo_horario">
+	<sequence>
+		<element name="dia" type="tipo_dia"/>
+	</sequence>
+	<attribute name="id" type"short" use="REQUIRED"/>
+</ComplexType>
+
+<ComplexType name="tipo_dia">
+	<sequence>
+		<element name="hora_inicio" type="tipo_hora_inicio"/>
+	</sequence>
+</ComplexType>
+
+<ComplexType name="tipo_hora_inicio">
+	<sequence>
+		<element name="sala" type="short" minOccurs="1"/>
+	</sequence>
+	<attribute name="hora_inicio" type"short" use="REQUIRED"/>
+</ComplexType>
+
+<ComplexType name="tipo_proximos_estrenos"/>
+	<sequence>
+		<element name="pelicula" type="tipo_pelicula"/>
+	</sequence>
+	<attribute name="codigo" type"short" use="REQUIRED"/>
+</ComplexType>
+
+<ComplexType name="tipo_pelicula"/>
+	<sequence>
+		<element name="dia" type"date"/>
+		<element name="mes" type"date"/>
+		<element name="año" type"date"/>
+	</sequence>
+</ComplexType>
+		
+</xs:schema>

@@ -1,0 +1,88 @@
+﻿PARTE DE XML
+
+
+<sedes>
+	
+	<sede id='1'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+
+
+PARTE DE DTD
+
+
+<!ELEMENT sedes(sede+)>
+<!ATTLIST sede id CDATA #REQUIRED>
+	<!ELEMENT sede(cartelera,proximos_estrenos+)>
+		<!ELEMENT cartelera(pelicula+)>
+		<!ATTLIST pelicula codigo CDATA #REQUIRED>
+			<!ELEMENT pelicula(precio, representacion,horario+)>
+				<!ELEMENT precio(#PCDATA)>
+				<!ELEMENT representacion(En3D?,Original?)>
+					<!ELEMENT En3D(#PCDATA)>
+					<!ELEMENT Original(#PCDATA)>
+				<!ELEMENT horario (dia)>
+				<!ATTLIST dia id CDATA #REQUIRED>
+					<ELEMENT dia(hora_inicio)>
+						<!ELEMENT hora_inicio(sala+)>
+							<!ELEMENT sala(#PCDATA)>
+		<!ELEMENT proximos_estrenos(pelicula+)>
+		<!ATTLIST pelicula codigo CDATA #REQUIRED>
+			<!ELEMENT pelicula(fecha_estreno)>
+				<!ELEMENT dia(#PCDATA)>
+				<!ELEMENT mes(#PCDATA)>
+				<!ELEMENT año(#PCDATA)>
+		

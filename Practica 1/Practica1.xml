@@ -1,0 +1,666 @@
+						PRACTICA 1 FUNDAMENTOS DE LAS TI 
+						PARTE DE XML 
+						JUAN DE FRUTOS MERINO 	
+						
+						PARTE PELICULAS 
+
+
+<?xml version=“1.0” encoding=“UTF-8” ?>
+<peliculas>
+    <pelicula codigo = "1">
+        <Titulo>
+            <TituloOriginal></TituloOriginal>
+        </Titulo>
+        <Personaje nombre= "">
+            <Actor nombre= "">
+            </Actor>
+        </Personaje>
+        <EquipoTecnico>
+            <Director></Director>
+            <Guionista></Guionista>
+            <Productora></Productora>
+        </EquipoTecnico>
+        <FechaEstreno>
+            <Dia></Dia>
+            <Mes></Mes>
+            <Anno></Anno>
+        </FechaEstreno>
+        <País nombre=””></Pais>
+        <Idioma></Idioma>
+        <Genero tipo =”” ></Genero>
+        <Duracion></Duracion>
+        <CalificacionEdad>
+            <Mayorde7años></Mayorde7años>
+            <Mayorde12años></Mayorde12años>
+            <Mayorde18años></Mayorde18años>
+        </CalificacionEdad>
+        <Sinopsis></Sinopsis>
+        <Web></Web>
+        <Estreno></Estreno>
+	<LugarEstreno= “”></LugarEstreno>
+        <Version>
+            <VersionOriginal></VersionOriginal>
+            <Subtitulos></Subtitulos>
+            <En3d></En3d>
+        </Version>
+    </pelicula>
+</peliculas>
+
+<?xml version=“1.0” encoding=“UTF-8” ?>
+<peliculas>
+    <pelicula codigo = "2">
+        <Titulo>
+            <TituloOriginal></TituloOriginal>
+        </Titulo>
+        <Personaje nombre= "">
+            <Actor nombre= "">
+            </Actor>
+        </Personaje>
+        <EquipoTecnico>
+            <Director></Director>
+            <Guionista></Guionista>
+            <Productora></Productora>
+        </EquipoTecnico>
+        <FechaEstreno>
+            <Dia></Dia>
+            <Mes></Mes>
+            <Anno></Anno>
+        </FechaEstreno>
+        <País nombre=””></Pais>
+        <Idioma></Idioma>
+        <Genero tipo =”” ></Genero>
+        <Duracion></Duracion>
+        <CalificacionEdad>
+            <Mayorde7años></Mayorde7años>
+            <Mayorde12años></Mayorde12años>
+            <Mayorde18años></Mayorde18años>
+        </CalificacionEdad>
+        <Sinopsis></Sinopsis>
+        <Web></Web>
+        <Estreno></Estreno>
+	<LugarEstreno= “”></LugarEstreno>
+        <Version>
+            <VersionOriginal></VersionOriginal>
+            <Subtitulos></Subtitulos>
+            <En3d></En3d>
+        </Version>
+    </pelicula>
+</peliculas>
+<peliculas>
+
+<?xml version=“1.0” encoding=“UTF-8” ?>
+    <pelicula codigo = "3">
+        <Titulo>
+            <TituloOriginal></TituloOriginal>
+        </Titulo>
+        <Personaje nombre= "">
+            <Actor nombre= "">
+            </Actor>
+        </Personaje>
+        <EquipoTecnico>
+            <Director></Director>
+            <Guionista></Guionista>
+            <Productora></Productora>
+        </EquipoTecnico>
+        <FechaEstreno>
+            <Dia></Dia>
+            <Mes></Mes>
+            <Anno></Anno>
+        </FechaEstreno>
+        <País nombre=””></Pais>
+        <Idioma></Idioma>
+        <Genero tipo =”” ></Genero>
+        <Duracion></Duracion>
+        <CalificacionEdad>
+            <Mayorde7años></Mayorde7años>
+            <Mayorde12años></Mayorde12años>
+            <Mayorde18años></Mayorde18años>
+        </CalificacionEdad>
+        <Sinopsis></Sinopsis>
+        <Web></Web>
+        <Estreno></Estreno>
+	<LugarEstreno= “”></LugarEstreno>
+        <Version>
+            <VersionOriginal></VersionOriginal>
+            <Subtitulos></Subtitulos>
+            <En3d></En3d>
+        </Version>
+    </pelicula>
+</peliculas>
+
+
+
+
+
+
+
+
+									PARTE SEDES
+
+<?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='1'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='1'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='2'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='3'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='4'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='5'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='6'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='7'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
+
+?xml version=“1.0” encoding=“UTF-8” ?>
+<sedes>
+	
+	<sede id='8'>
+		
+		<cartelera>
+			
+			<pelicula codigo='1'>
+
+				<precio></precio>
+				
+				<representacion>
+				
+					<En3D></En3D>
+			
+					<Original></Original>
+				
+				</representacion>
+				
+				<horario>
+					
+					<dia id='Lunes'>
+						
+						<hora hora_inicio='1'>
+							
+							<sala></sala>
+						
+						</hora>
+					
+					</dia>
+				
+				</horario>
+			
+			</pelicula>
+		
+		</cartelera>
+		
+		<proximos_estrenos>
+			
+			<pelicula codigo='1'>
+						
+				<fecha_estreno>
+					
+					<dia></dia>
+					
+					<mes></mes>
+					
+					<año></año>
+				
+				</fecha_estreno>
+			
+			</pelicula>
+		
+		</proximos_estrenos>
+	
+	</sede>
+
+</sedes>
